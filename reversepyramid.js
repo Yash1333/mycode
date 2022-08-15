@@ -2,24 +2,24 @@
 
 
 
-////////////////////////////////
+// ////////////////////////////////
 
-function printReversePyramid(num){
-    for(let i=1; i<=num; i++){
-        let line="";
-        // 1. Print initial space
-        for(let j=1; j<i; j++){
-            line=line+" "; // line+="";
-        }
-        // 2. Print nums and spaces in between.
-        for(let k=i; k<=num; k++){
-            line+=k+" ";
-        }
-        console.log(line);
-    }
-}
+// function printReversePyramid(num){
+//     for(let i=1; i<=num; i++){
+//         let line="";
+//         // 1. Print initial space
+//         for(let j=1; j<i; j++){
+//             line=line+" "; // line+="";
+//         }
+//         // 2. Print nums and spaces in between.
+//         for(let k=i; k<=num; k++){
+//             line+=k+" ";
+//         }
+//         console.log(line);
+//     }
+// }
 
-printReversePyramid(11)
+// printReversePyramid(11)
 // /////////////////
 function printreversepyramids(num){
 
@@ -36,4 +36,17 @@ function printreversepyramids(num){
 }
    
 }
-printreversepyramids(8);
+printreversepyramids(10);
+//
+function printrevrsepyramid(num){
+     for(let i=1;i<=num;i++){
+
+        let line=" ";
+        for( j=1;j<=i;j++){
+            line=line+=" ";
+        } for(k=i;k<=num;k++){
+            line+=k+" ";
+        } console.log(line);
+     }
+
+}printreversepyramids(16);
