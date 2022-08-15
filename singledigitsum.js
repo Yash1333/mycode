@@ -1,21 +1,43 @@
 
-function findSingleDigitSum(num){ // 10
-    // 1. Convert number to string.
-    // => Because you can't find length/travers a number
-    const numStr = num.toString();
+
+
+/////
+function tofindthesum(num){
+
+    const numStr=num.toString();
+
     if(numStr.length==1){
         return numStr;
     }
     let sum=0;
-    // 2. Sum all digits of the number.
-    for(i=0; i<numStr.length; i++){
+    for(i=0;i<numStr.length;i++){
         sum+=Number(numStr[i]);
     }
-    if(sum>9){ // 10
-        findSingleDigitSum(sum); // 10
+    if(sum>9){
+        tofindthesum(sum);
     }else{
         console.log(sum);
+
     }
 }
+tofindthesum(1234);
 
-findSingleDigitSum(12345);
+//////////////////
+function tofindthesums(num){
+const numStr=num.toString();
+if(numStr==1){
+    return numStr;
+}let sum=0
+for(i=0;i<numStr.length;i++){
+    sum+=Number(numStr[i]);
+
+}
+if (sum>9){
+    tofindthesums(sum);
+}
+else{
+    console.log(sum);
+}
+
+}
+tofindthesums(6789);
